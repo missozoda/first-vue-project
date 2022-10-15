@@ -8,7 +8,7 @@
                     <li class="text-xl text-[#2947A9] font-medium mb-8">Email:  <a class="text-xl text-neutral-800" href="mailto:hello@thebox.com"> hello@thebox.com</a></li>
                 </ul>
                 <div class="flex justify-start align-baseline">
-                    <img class="block logo" src="../assets/images/logo.svg" alt="logo" width="38" height="47.5">
+                    <img class="block logo" src="../assets/images/logo.svg" alt="logo" width="38" height="48">
                     <span class=" block text-blue-500 hover:text-blue-400 text-2xl font-bold mt-2 mx-3">TheBox</span>
                 </div>
             </div>
