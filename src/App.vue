@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import '../dist/output.css'
+import '../assets/styles/output.css'
 import HeaderSection from './components/HeaderSection'
 import HeroSection from './components/HeroSection.vue'
 import Reasons from './components/Reasons.vue'
