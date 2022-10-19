@@ -5,21 +5,22 @@
             <p class="text-xl w-2/5 text-neutral-800 mx-auto mb-9">We are ready to work on a project of any complexity, whether it's commercial or residential.</p>
             <div class="mx-80 text-start">
                 <form @submit.prevent>
-                    <div class="flex justify-betwen items-center mb-5">
-                        <input v-model="name" class="block p-2.5 pr-16 mr-8 border border-neutral-100 rounded" type="text" name="name" placeholder="Your Name *" required >
-                        <input v-model="email" class="block p-2.5 pr-16 mr-8 border border-neutral-100 rounded" type="email" name="email" placeholder="Email *" required>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input v-model="name" class="block p-2.5  border border-neutral-100 rounded focus:outline-none focus:border-neutral-300"  type="text" name="name" placeholder="Your Name *" required >
+                        <input v-model="email" class="block p-2.5  border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="email" name="email" placeholder="Email *" required>
+
+
+                        <input v-model="reason" class="block p-2.5 border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="text" name="reason" placeholder="Reason for Contacting *" required>
+                        <input class="block p-2.5 border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="number" name="phone" placeholder="Phone">
+
+                        <textarea class="col-span-2 block w-full mb-2  p-2.5  border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="textarea" name="massage" placeholder="Massage" rows="8"></textarea>
+                        
+                        <span class="col-span-2 text-neutral-500 text-base">* indicates a required field</span>
+                        
+                        <button @click="submitForm" class="col-span-2 block bg-[#2947A9] text-white rounded py-3 px-24 font-semibold text-lg mx-auto mt-7" type="submit"
+                        >Submit</button>
+                        <vue-basic-alert :duration="300" :closeIn="5000" ref="alert" />
                     </div>
-                    <div class="flex justify-betwen items-center mb-5">
-                        <input v-model="reason" class="block p-2.5 pr-16 mr-8 border border-neutral-100 rounded" type="text" name="reason" placeholder="Reason for Contacting *" required>
-                        <input class="block p-2.5 pr-16 mr-8 border border-neutral-100 rounded" type="number" name="phone" placeholder="Phone">
-                    </div>
-                    <input class="block w-full mb-2 pb-32 p-2.5 pr-16 border border-neutral-100 rounded" type="text" name="massage" placeholder="Massage">
-                    
-                    <span class="text-neutral-500 text-base">* indicates a required field</span>
-                    
-                    <button @click="submitForm" class="block bg-[#2947A9] text-white rounded py-3 px-24 font-semibold text-lg mx-auto mt-7" type="submit"
-                    >Submit</button>
-                    <vue-basic-alert :duration="300" :closeIn="5000" ref="alert" />
                 </form>
             </div>
         </Container>
