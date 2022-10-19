@@ -14,7 +14,9 @@
                         <input class="block p-2.5 pr-16 mr-8 border border-neutral-100 rounded" type="number" name="phone" placeholder="Phone">
                     </div>
                     <input class="block w-full mb-2 pb-32 p-2.5 pr-16 border border-neutral-100 rounded" type="text" name="massage" placeholder="Massage">
+                    
                     <span class="text-neutral-500 text-base">* indicates a required field</span>
+                    
                     <button @click="submitForm" class="block bg-[#2947A9] text-white rounded py-3 px-24 font-semibold text-lg mx-auto mt-7" type="submit"
                     >Submit</button>
                     <vue-basic-alert :duration="300" :closeIn="5000" ref="alert" />
@@ -24,15 +26,6 @@
     </section>
 </template>
 
-<!--               :disabled="isDisabled()"     
-        @click="$refs.alert
-                        .showAlert(
-                            'success',
-                            '',
-                            'Success',
-                            'Success 200',
-                            'This is the information of something you may know Success.'
-                        )" -->
 <script >
 import useValidate from '@vuelidate/core';
 import { required } from '@vuelidate/validators';

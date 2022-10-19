@@ -1,48 +1,19 @@
 <template>
   <div>
-    <HeaderSection/>
-    <HeroSection/>
-    <Reasons/>
-    <About/>
-    <Services/>
-    <Stats/>
-    <Ads/>
-    <Projects/>
-    <CTA/>
-    <Bottom/>
-    <FooterSection/>  
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import './assets/styles/output.css'
-import HeaderSection from './components/HeaderSection'
-import HeroSection from './components/HeroSection.vue'
-import Reasons from './components/Reasons.vue'
-import About from './components/About.vue'
-import Services from './components/Services.vue'
-import Stats from './components/Stats.vue'
-import Ads from './components/Ads.vue'
-import Projects from './components/Projects.vue'
-import Bottom from './components/Bottom.vue'
-import FooterSection from './components/FooterSection.vue'
-import CTA from './components/CTA.vue'
+import Home from './components/pages/Home.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderSection,
-    HeroSection,
-    Reasons,
-    About,
-    Services,
-    Stats,
-    Ads,
-    Projects,
-    Bottom,
-    FooterSection,
-    CTA,
-}}
+    Home
+},
+}
 </script>
 
 <style>

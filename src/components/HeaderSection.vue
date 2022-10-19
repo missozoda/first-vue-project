@@ -7,11 +7,21 @@
                     <span class=" block text-blue-500 hover:text-blue-400 text-2xl font-bold mt-2 mx-3">TheBox</span>
                 </div>
                 <ul class="list-none flex justify-between gap-5 mt-2">
-                    <li class="nav-list mx-4 text-xl"><a class="nav-link text-stone-800 hover:text-red-500" href="#">Home</a></li>
-                    <li class="nav-list mx-4 text-xl"><a class="nav-link text-stone-800 hover:text-red-500" href="#"> About Us</a></li>
-                    <li class="nav-list mx-4 text-xl"><a class="nav-link text-stone-800 hover:text-red-500" href="#"> Projects</a></li>
-                    <li class="nav-list mx-4 text-xl"><a class="nav-link text-stone-800 hover:text-red-500" href="#"> Contact Us</a></li>
-                    <li class="nav-list mx-4 text-xl"><a class="nav-link text-stone-800 hover:text-red-500" href="#"> Sevices</a></li>
+                    <li class="nav-list mx-4 text-xl">
+                        <router-link class="nav-link text-stone-800 hover:text-red-500" :to="'/'">Home</router-link>
+                    </li>
+                    <li class="nav-list mx-4 text-xl">
+                        <router-link class="nav-link text-stone-800 hover:text-red-500" :to="'/aboutus'"> About Us</router-link>
+                    </li>
+                    <li class="nav-list mx-4 text-xl">
+                        <router-link class="nav-link text-stone-800 hover:text-red-500" :to="'/projects'"> Projects</router-link>
+                    </li>
+                    <li class="nav-list mx-4 text-xl">
+                        <router-link class="nav-link text-stone-800 hover:text-red-500" :to="'/contacts'"> Contact Us</router-link>
+                    </li>
+                    <li class="nav-list mx-4 text-xl">
+                        <router-link class="nav-link text-stone-800 hover:text-red-500" :to="'/sevices'"> Sevices</router-link>
+                    </li>
                 </ul>
             </div>
         </Container>
