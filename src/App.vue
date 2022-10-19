@@ -10,8 +10,7 @@
     <Projects/>
     <CTA/>
     <Bottom/>
-    <FooterSection/>
-  
+    <FooterSection/>  
   </div>
 </template>
 
@@ -42,7 +41,7 @@ export default {
     Projects,
     Bottom,
     FooterSection,
-    CTA
+    CTA,
 }}
 </script>
 
