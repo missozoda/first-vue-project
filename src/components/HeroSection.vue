@@ -16,7 +16,7 @@
         </div>
     </swiper-slide>
     </swiper>
-    <h1 class="absolute z-20 left-14 top-60 lg:text-6xl text-4xl font-bold text-neutral-900 md:w-2/5 w-3/4">Building things is our mission.</h1>
+    <h1 class="absolute z-20 left-14 top-60 lg:text-6xl text-2xl font-bold text-neutral-900 md:w-2/5 w-3/4">Building things is our mission.</h1>
     <div class="parallax-slider-navigation absolute z-20 bottom-[90px] right-0 left-0 md:left-auto bg-blue-600 text-center pt-5 text-white px-[90px]">
         <h4 class="md:text-sm text-md mb-3 font-bold">Feature Projects</h4>
         <p class="text-lg mb-2 md:w-56 w-full mx-auto">The National University of Architecture</p>
