@@ -16,10 +16,10 @@
         </div>
     </swiper-slide>
     </swiper>
-    <h1 class="absolute z-20 left-14 top-60 text-6xl font-bold text-neutral-900 w-2/5">Building things is our mission.</h1>
-    <div class="parallax-slider-navigation absolute z-20 bottom-[90px] right-0 bg-blue-600 text-center pt-5 text-white px-[90px]">
-        <h4 class="text-sm mb-3 font-bold">Feature Projects</h4>
-        <p class="text-lg mb-2 w-56 mx-auto">The National University of Architecture</p>
+    <h1 class="absolute z-20 left-14 top-60 lg:text-6xl text-4xl font-bold text-neutral-900 md:w-2/5 w-3/4">Building things is our mission.</h1>
+    <div class="parallax-slider-navigation absolute z-20 bottom-[90px] right-0 left-0 md:left-auto bg-blue-600 text-center pt-5 text-white px-[90px]">
+        <h4 class="md:text-sm text-md mb-3 font-bold">Feature Projects</h4>
+        <p class="text-lg mb-2 md:w-56 w-full mx-auto">The National University of Architecture</p>
     </div>
     </section>
 </template>
@@ -91,7 +91,18 @@ export default {
     width: 207px;
     height: 35px;
     top: 98% !important;
-    left: 70% !important;
+    left: auto !important;
+    right: 197px !important
+}
+@media only screen and (max-width: 767px) {
+    .swiper-button-prev {
+        width: 120px;
+        left: 0 !important;
+        right: auto !important
+    }
+    .swiper-button-next{
+        width: 120px;
+    }
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
