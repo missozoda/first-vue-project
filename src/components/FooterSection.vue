@@ -1,7 +1,7 @@
 <template>
-    <footer class="bg-[#2947A9] p-6">
+    <footer class="bg-[#2947A9] sm:p-6 p-2">
         <Container class="text-start">
-            <p class="text-white text-base">TheBox Company © 2022. All Rights Reserved</p>
+            <p class="text-white sm:text-base text-sm">TheBox Company © 2022. All Rights Reserved</p>
         </Container>
     </footer>
 </template>
