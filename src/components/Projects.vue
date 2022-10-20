@@ -3,7 +3,7 @@
         <Container>
             <h3 class="font-bold text-neutral-800 text-4xl mb-10">Projects</h3>
             <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
-                <ul class="list-none xl:col-span-1 md:col-span-2 m-0 p-0 flex xl:flex-col flex-row justify-between">
+                <ul class="list-none xl:col-span-1 md:col-span-2 m-0 p-0 flex xl:flex-col flex-row justify-between xl:justify-start">
                     <li class="md:text-2xl text-lg font-bold text-[#2947A9] xl:border-l-2 border-b-2 xl:border-b-0 border-[#2947A9] px-4 mb-4 ">All</li>
                     <li class="px-4 text-neutral-200 md:text-2xl text-lg font-medium mb-4 hover:text-neutral-500">Commercial</li>
                     <li class="px-4 text-neutral-200 md:text-2xl text-lg font-medium mb-4 hover:text-neutral-500">Residential</li>
