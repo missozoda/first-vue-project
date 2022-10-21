@@ -6,7 +6,13 @@
             <div class="xl:mx-80 mx-auto text-start">
                 <form @submit.prevent>
                     <div class="sm:grid sm:grid-cols-2 gap-4">
-                        <input v-model="name" class="block p-2.5 mb-4 sm:mb-0 w-full  border border-neutral-100 rounded focus:outline-none focus:border-neutral-300"  type="text" name="name" placeholder="Your Name *" required >
+                        <input 
+                        v-model="name" 
+                        class="block p-2.5 mb-4 sm:mb-0 w-full  border border-neutral-100 rounded focus:outline-none focus:border-neutral-300"
+                        type="text" 
+                        name="name" 
+                        placeholder="Your Name *" 
+                        required >
                         <input v-model="email" class="block p-2.5 mb-4 sm:mb-0 w-full border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="email" name="email" placeholder="Email *" required>
                         <input v-model="reason" class="block p-2.5 mb-4 sm:mb-0 w-full border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="text" name="reason" placeholder="Reason for Contacting *" required>
                         <input class="block p-2.5 mb-4 sm:mb-0 w-full border border-neutral-100 rounded focus:outline-none focus:border-neutral-300" type="number" name="phone" placeholder="Phone">
