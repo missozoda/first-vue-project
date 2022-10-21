@@ -1,7 +1,7 @@
 <template>
-  <div class="locale-changer flex fit-cover">
-    <img class="w-[40px] h-[22px] block" :src="lang" alt="lang">
-    <select class="border border-neutral-100 rounded focus:outline-none focus:border-neutral-300 px-4" v-model="$i18n.locale" @change="switchlang($i18n.locale)">
+  <div class="locale-changer flex fit-cover h-[25px]">
+    <img class="w-[25px] h-[25px] block rounded" :src="lang" alt="lang">
+    <select class="rounded focus:outline-none text-xl" v-model="$i18n.locale" @change="switchlang($i18n.locale)">
       <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale"> {{ locale }} 
       </option>
     </select>
