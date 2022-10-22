@@ -2,8 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import { createI18n} from 'vue-i18n'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 const defLang = localStorage.getItem('lang')
+
 
 const i18n = createI18n({
   locale: defLang || "en",
@@ -29,14 +32,4 @@ const i18n = createI18n({
   }
 })
 
-createApp(App).use(i18n).use(router).mount('#app')
-
-
-//  @click="funksiya"
-//  funksiye{
-//   this.$emit.funksiyanomi
-// }
-
-// :funksiyanomi=funksiya
-
-// funksiya
+createApp(App).use(VueAxios, axios).use(i18n).use(router).mount('#app')
