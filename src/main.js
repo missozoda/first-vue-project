@@ -14,7 +14,8 @@ const i18n = createI18n({
       project:"Projects",
       contacts:"Contact Us",
       services:"Services",
-      switchLang:"Uz"
+      switchLang:"Uz",
+      heroTitle:"Building things is our mission."
     },
     uz:{
       home:"Asosiy",
@@ -22,9 +23,20 @@ const i18n = createI18n({
       project:"Loyihalar",
       contacts:"Kontaktlar",
       services:"Servislar",
-      switchLang:"En"
+      switchLang:"En",
+      heroTitle:"Qurilish ishlari bizning vazifamiz."
     }
   }
 })
 
 createApp(App).use(i18n).use(router).mount('#app')
+
+
+//  @click="funksiya"
+//  funksiye{
+//   this.$emit.funksiyanomi
+// }
+
+// :funksiyanomi=funksiya
+
+// funksiya
