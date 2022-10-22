@@ -5,8 +5,12 @@
 
       <h1 class="font-bold text-4xl text-neutral-800 mt-6">Projects page</h1>
       <p class="text-xl pb-80">Test page</p>
-      <!-- <button @click="getList()" class="my-4 p-5 text-xl font-bold border border-neutral-800"> Show movies </button> -->
-
+      <ul class="movie-list grid grid-cols-3 gap-5 list-none m-0 p-0">
+        <li class="border border-neutral-800 rounded p-5 text-neutral-800 bg-white " v-for="movie in movies" :key="movie">
+          <h3 class="title font-bold text-2xl">Title: {{movie.Title}}</h3>
+          <p class="text-xl">Year: {{movie.Year}}</p>
+        </li>
+      </ul>
     </div>
     <Bottom/>
     <FooterSection/> 
@@ -26,15 +30,19 @@ export default {
     FooterSection,
   },
   data:()=>({
-    movie:[]
+    movies:null
   }),
-//   methods: {
-//       getList() {
-//         this.axios.get(`http://www.omdbapi.com/?apikey=b3078df7&s=Hulk&page=2`).then((response) => {
-//           console.log(response.data, this.movie)
-//           return this.movie=response.data
-//         })
-// }}
+  methods: {
+    init(){
+      this.axios.get(`http://www.omdbapi.com/?apikey=b3078df7&s=Hulk&page=2`).then((response) => {
+        console.log(response.data.Search)
+        return this.movies=response.data.Search
+      })
+    }
+},
+mounted(){
+  this.init();
+}
 }
 
 </script>
